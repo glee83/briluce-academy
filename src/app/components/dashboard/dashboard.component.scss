@@ -1,0 +1,256 @@
+@import  '../../../assets/fonts/variable';
+mat-panel-title{
+    color: $card-color;
+    mat-icon{
+        margin-right: .5rem;
+    }
+}
+
+mat-icon{
+    color: $icon-color;
+}
+
+mat-expansion-panel{
+    background-color: transparent;
+    box-shadow: none;
+    button{
+        color: #f4f4f4;
+        padding: .2rem 0;
+    }
+}
+
+mat-sidenav-container{
+    height: 100vh;
+    width: 100%;
+
+    mat-divider{
+        background-color: $primary-color;
+        margin: 1rem 0;
+    }
+
+    mat-sidenav{
+        width: 250px;
+        border: none;
+        background-color: $primary-color;
+        color: $card-color;
+        padding: 16px;
+        text-align: center;
+        border-radius: .2rem;
+
+        button{
+            display: flex;
+            width: 100%;
+            mat-icon{
+                margin-right: .5rem;
+                vertical-align: middle;
+            }
+
+            span{
+                margin-left: .5rem;
+            }
+        }
+
+        div.sidenav-heading{
+            width: 100%;
+            text-align: center;
+            position: relative;
+
+            h3.heading{
+                font-family: $font-family;
+                font-size: 120%;
+                font-weight: 500;
+                padding: .2rem 0;
+            }
+
+            &::after{
+                content: '';
+                display: block;
+                position: absolute;
+                background-color:$icon-color;
+                height: .5px;
+                width: 90%;
+                bottom: 5%;
+                left: 10%;
+                transform: translate(-5%, -50%);
+                z-index: 1;
+            }
+        }
+
+        div.user-detail{
+            width: 100%;
+            margin-top: .3rem;
+            margin-top: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            position: relative;
+
+            img{
+                display: block;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                outline: 3px solid $card-color;
+                margin-bottom: .5rem;
+                background-color: #f4f4f4;
+            }
+
+            span.pro{
+                font-weight: 300;
+                font-size: 90%;
+                font-family: $font-family;
+                padding: .3rem 0;
+            }
+
+            span.active{
+                width: 10px;
+                height: 10px;
+                background-color: #c8d003;
+                border-radius: 50%;
+                position: absolute;
+                top: 0%;
+                right: 38%;
+                border: 1px solid#104f6b;
+            }
+
+            span.divider{
+                position: relative;
+                background-color:#fcb01a;
+                height: 1px;
+                width: 25%;
+                bottom: 22%;
+                opacity: .6;
+
+                &::before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 50%;
+                    background-color: #fcb01a;
+                    height: 5px;
+                    width: 5px;
+                    border-radius: 50%;
+                    top: 50%;
+                    transform: translate(50%, -50%)
+                }
+            }
+
+            h4.name{
+                margin: 0;
+                padding: .5rem 0;
+                font-family: $font-family;
+                font-size: 130%;
+
+            }
+        }
+
+        div.dashboard-features{
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            width: 100%;
+            // background-color: cadetblue;
+
+            div.feature{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: .2rem;
+                cursor: pointer;
+                padding: .3rem;
+
+                &:hover{
+                    background-color: #104f6b;
+                    border-radius: .2rem;
+                    transition: .24s all ease-in;
+                }
+
+                &:hover button,
+                &:active button{
+                    color: #f4f4f4;
+                }
+                
+                mat-icon{
+                    display: block;
+                    align-content:flex-end;
+                    padding: 0;
+                }
+                button{
+                    align-self: center;
+                    display: inline-flex;
+                    color: #f4f4f4fb;    
+                    
+                    span{
+                        font-size: 100%;
+                        font-family: $font-family;
+                    }  
+                }
+            }
+        }
+
+        div.dashboard-others{
+            width: 100%;
+            // margin-top: 2rem;
+            padding-top: 2rem;
+            div.other{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                span.others{
+                    font-family: $font-family;
+                    font-size: 120%;
+                    font-weight: 800;
+                }
+
+                span.hr{
+                    width: 40%;
+                    background-color: $icon-color;
+                    height: 1px;
+                    margin-left: 1rem;
+                    position: relative;
+
+                    &::after{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        left: 15%;
+                        top: -100%;
+                        // transform: translate(-30%, -15%);
+                        height: 3px;
+                        width: 20%;
+                        border-radius: .2rem;
+                        background-color: #c8d003;
+                    }
+                }
+
+            }
+        }
+
+        button.logout{
+            margin-top: 2rem;
+            padding-top: 5rem;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #c8d003;
+            cursor: pointer;
+            font-family: $font-family;
+            font-weight: 800;
+            font-size: 110%;
+
+            mat-icon{
+                vertical-align: middle;
+                color: #c8d003;
+            }
+        }
+    }
+
+    mat-sidenav-content{
+        background-color: #f4f4f4;
+        // width: 90%;
+          
+    }
+}

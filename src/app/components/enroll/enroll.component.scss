@@ -1,0 +1,808 @@
+@import '/src/assets/fonts/variable';
+
+mat-icon.cloud-down{
+    color: $card-icon-color;
+}
+mat-icon.watch{
+    color: #0497A1;
+}
+mat-icon.users{
+    color: #DBA900;
+}
+mat-icon.list{
+    color: #569C19
+}
+
+button.mat-button{
+    
+    background: #569C19;
+    padding:  .5rem 3rem;
+    color: #fff;
+    opacity: .9;
+    
+}
+
+mat-icon.tools{
+    color: #0497A1
+}
+
+// progress bar active bg
+
+div.changeBg{
+    a{
+        color: $card-icon-color;
+        font-weight: bold;
+    }
+    span{
+        background-color: $card-icon-color;
+        color: #fff !important;
+    }
+}
+
+section.enroll-section{
+    width: 100%;
+    height: 120vh;
+    background-color: #f8f8f8;
+    position: relative;
+
+    div.container{
+        width: 90%;
+        margin: 0 auto;
+
+        div.enroll-hero{
+            text-align: center;
+            padding: 2rem 0;
+
+            h1.hero-title{
+                color: #9B9B9B;
+                position: relative;
+                margin-bottom: 2rem;
+                font-family: $font-family;
+                font-size: 25px;
+                font-weight: 500;
+
+                &::after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 5%;
+                    height: 2px;
+                    background: #9B9B9B;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    margin-top: 1rem;
+                }
+            }
+
+            p.enroll-para{
+                font-weight: 300;
+                font-size: 15px;
+                color: #9B9B9B;
+                font-family: $font-family;
+            }
+        }
+
+        div.enroll-card-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+
+            div.enroll-course{
+                width: 40%;
+                height: auto;
+                height: 570px;
+                background: white;
+                // box-shadow:  10px 10px 60px #d3d3d3;
+                padding: .5rem 1rem;
+                margin: 0 auto;
+                position: relative;
+                border-radius: .7rem;
+                margin-bottom: 2rem;
+
+                &::after{
+                    content: '';
+                    display: block;
+                    background-color: #0497A1;
+                    width: 250px;
+                    height: 350px;
+                    z-index: 1;
+                    position: absolute;
+                    bottom: -1%;
+                    right: -1%;
+
+                    box-shadow: 10px 10px 20px #d0d0d0;
+                    clip-path: polygon(100% 0, 100% 100%, 43% 100%, 0 57%);
+                }
+                
+                div.card-head-container{
+                    width: 100%;
+                    padding: 1rem .2rem;
+                    display: grid;
+                    grid-template-columns: 1fr 2fr;
+                    grid-template-rows: 1fr;
+                    
+                    div.card-head-image{
+                        position: relative;
+                        width: 100%;
+                        img{
+                            width: 120%;
+                            border-radius: .5rem;
+                            position: absolute;
+                            left: -50%;
+                        }
+                    }
+                    
+                    div.card-wrapper{
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                        
+                        
+                        h2.course-title{
+                            text-align: center;
+                            font-weight: 600;
+                            font-size: 15px;
+                            color: #00707A;
+                            margin-bottom: 1rem;
+                        }
+
+                        div.card-head{
+                            width: 80%;
+                            margin: 0 auto;
+                            display: grid;
+                            grid-template-columns: repeat(4, 1fr);
+                            grid-template-rows: 1fr;
+            
+                            div.footer-content{
+                                margin-left: 0rem;
+                                padding: .2rem;
+                                width: 60px;
+                                text-align: center;
+
+                                mat-icon{
+                                    align-content: center;
+                                    padding: 0 .6rem;
+                                }
+                                span{
+                                    font-size: 11px;
+                                    font-weight: 500;
+                                    display: block;
+                                    color: $light-dark;
+                                }
+                                span.duration{
+                                    font-weight: 400;
+                                }
+
+                                &:first-child{
+                                    border-radius: .5rem;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                div.card-body-container{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr;
+                    gap: 10px;
+                    margin-top: 1rem;
+
+                    ul.card-body-content{
+                        padding: 0;
+                        box-sizing: border-box;
+                        margin-left: 1rem;
+                        // border: 1px solid #000;
+                        width: 300px;
+                        margin: 0;
+
+                        h4.card-body-content-title{
+                            margin-bottom: .5rem;
+                            font-weight: 700;
+                            font-size: 14px;
+                        }
+                        
+                        li{
+                            list-style-type: none;
+                            display: block;
+                            padding: 0 .5rem;
+
+                            mat-icon.list-icon{
+                                color: #71AC3E;
+                                font-size: 12px;
+                            }
+
+                            span{
+                                font-size: 11px;
+                                font-family: $font-family;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+
+                div.card-footer-content{
+                    position: absolute;
+                    right: 0;
+                    bottom: 10%;
+                    z-index: 9999;
+
+                    div.footer-title{
+                        margin-top: -2rem;
+                        margin-left: 5rem;
+
+                        span{
+                            display: block;
+                            color: #fff;
+                        }
+
+                        span.number-of-enrol{
+                            font-size: 90px;
+                            font-weight: 600;
+                            color: #60A4AA;
+                        }
+                    }
+
+                    div.footer-body{
+                        margin-top: 2rem;
+                        margin-bottom: -1rem;
+                        span,b{
+                            display: block;
+                            color: #fff;
+                            margin-left: 3rem;
+                        }
+
+                        span{
+                            font-size: 14px;
+                        }
+
+                        b{
+                            font-size: 17px;
+                            font-weight: 5;
+                        }
+                    }
+                }
+
+            }
+            
+            
+            div.bar{
+                position: relative;
+                // background: #a15804;
+                background: #0497A1;
+                width: 20px;
+                height: 5px;
+                border-radius: .5rem;
+                margin-bottom: 2rem;
+                transform: rotate(90deg);
+
+                &::after
+                {
+                    content: '';
+                    display: block;
+                    background: #0497A1;
+                    width: 150px;
+                    height: 1px;
+                    position: absolute;
+                    left: 100%;
+                    top: 48%;
+                }
+
+                &::before{
+                    content: '';
+                    display: block;
+                    background: #0497A1;
+                    width: 150px;
+                    height: 1px;
+                    position: absolute;
+                    right: 100%;
+                    top: 48%;
+                }
+            }
+
+            div.enroll-form{
+                width: 45%;
+                overflow: hidden;
+
+                div.user-progress{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    position: relative;
+
+                    &::after{
+                        content: '';
+                        background-color: #CCDFBB;
+                        height: 1px;
+                        width: 90%;
+                        left: 50%;
+                        // top: 50%;
+                        margin-top: 2rem;
+                        transform: translate(-50%,0);
+                        display: block;
+                        position: absolute;
+                        z-index: 1;
+                    }
+
+                    div.progress-link{
+                        cursor: pointer;
+                        position: relative;
+                        a,span{
+                            display: block;
+                            text-align: center;
+                            text-decoration: none;
+                            color: $light-dark;
+                            z-index: 999;
+                        }
+
+                        a{
+                            margin-bottom: 1rem;
+                            font-size: 13px;
+                            font-weight: 400;
+                        }
+
+                        span{
+                            background: #CCDFBB;
+                            color: #000;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            text-align: center !important;
+                            display: block;
+                            padding: .4rem;
+                            margin: 0 auto;
+                            position: relative;
+                        }
+                    }
+                }
+
+                form.users-form{
+                    width: 100%;
+                    margin: 2rem auto;
+
+                    fieldset{
+                        border: none;
+                        outline: none;
+                        margin-bottom: 1rem;
+                        width: 100%;
+                        display: flex;
+
+                        input{
+                            width: 48%;
+                            outline: none;
+                            border: none;
+                            padding: 1rem .5rem;
+                            text-align: center;
+                            border-radius: .3rem;
+                            box-shadow: 0px 8px 8px #d0d0d060;
+
+                            &:hover{
+                                background: #D3E9EB;
+                                transition: all .35s ease;
+                            }
+                        }
+
+                        input:not(:last-child){
+                            margin-right: .6rem;
+                        }
+                    }
+
+                    button{
+                        background: #569C19;
+                        padding:  .5rem 3rem;
+                        color: #fff;
+                        opacity: .9;
+                        outline: none;
+                    }
+                }
+
+                form.users-lang{
+                    width: 90%;
+                    margin: 2rem auto;
+
+                    h5.users-title{
+                        margin-bottom: .5rem;
+                        font-family: $font-family;
+                        font-weight: 300;
+                        font-size: 15px;
+                    }
+                    fieldset{
+                        border: none;
+                        outline: none;
+                        margin-bottom: 1rem;
+                        width: 100%;
+                        background-color: #fff;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: .4rem .5rem;
+                        border-radius: .3rem;
+                        box-shadow: 0px 8px 8px #d0d0d060;
+
+                        label{
+                            font-family: $font-family;
+                            font-size: 14px;
+                            font-weight: 300;
+
+                            b{
+                                margin-left: 1rem;
+                                font-weight: 500;
+                            }
+                        }
+
+                        span.number{
+                            display: block;
+                            padding: .01rem 1rem;
+                            border-radius: .2rem;
+                            margin-right: .5rem;
+                            background-color: rgba(53, 118, 0, 0.3);
+                            color: #367600;
+                        }
+
+                        textarea{
+                            border: none;
+                            outline: none;
+                            border-radius: .3rem;
+                        }
+                    }
+
+                    button{
+                        background: #569C19;
+                        padding:  .5rem 3rem;
+                        color: #fff;
+                        opacity: .9;
+                    }
+                }
+
+                form.users-documents{
+                    width: 100%;
+                    margin: 2rem auto;
+
+                    h5.users-title{
+                        margin-bottom: .5rem;
+                        font-family: $font-family;
+                        font-weight: 300;
+                        font-size: 15px;
+                    }
+
+                    div.documents-container{
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        padding-bottom: 11rem;
+                        width: 100%;
+
+                        fieldset.user-docu{
+                            width: 20% !important;
+                            text-align: center;
+                            background-color: #E9F0F1;
+                            position: relative;
+                            cursor: pointer;
+                            padding: .5rem .6rem;
+                            height: 80px;
+                            overflow: hidden;
+                            border-radius: .3rem;
+                            border: none;
+                            outline: none;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            box-shadow: 10px 10px 10px rgba(211, 211, 211, 0.6);
+
+                            input[type="file"] {
+                                opacity: 0;
+                                cursor: pointer;
+                            }
+
+                            span{
+                                display: block;
+                                font-family: $font-family;
+                                font-size: 13px;
+                                font-weight: 400;
+                                position: absolute;
+                                top: 50%;
+                                transform: translate(0 , -50%);
+                                text-transform: capitalize;
+                            }
+
+                            mat-icon{
+                                color: #00707A;
+                            }
+
+                            &:last-child{
+                                margin-top: 1rem;
+                                width: 10%;
+                            }
+                        }
+                    }
+                }
+                form.users-payments{
+                    width: 90%;
+                    margin: 2rem auto;
+
+                    h5.users-title{
+                        margin-bottom: .5rem;
+                        font-family: $font-family;
+                        font-weight: 300;
+                        font-size: 15px;
+                    }
+
+                    div.payment-container{
+                        width: 100%;
+                        padding-bottom: 11rem;
+
+                        div.payment-methods{
+                            width: 100%;
+                            height: 500px;
+                            overflow: hidden;
+                            position: relative;
+                            background-color: #DFEEEF;
+                            padding: 1rem .5rem;
+
+                            h2.titl{
+                                font-family: $font-family;
+                                font-weight: 500;
+                                font-size: 16px;
+                                color: #00707A;;
+                            }
+
+                            span.bar{
+                                position: relative;
+                                display: block;
+                                width: 30%;
+                                height: 4px;
+                                margin-bottom: 1rem;
+                                background-color: #00707A;
+
+                                &::after{
+                                    content: '';
+                                    display: block;
+                                    background-color: #00707A;
+                                    height: 1px;
+                                    width: 80%;
+                                    position: absolute;
+                                    left: 20%;
+                                    top: 50%;
+                                    z-index: 1;
+                                }
+                            }
+
+                            div.payment-container{
+                                width: 100%;
+                                position: relative;
+                    
+                                a{
+                                    text-decoration: none;
+                                    display: block;
+                                    width: 50%;
+                                    img{
+                                        width: 101px!important;
+                                    };
+
+                                    &:hover{
+                                        padding-right: 1rem;
+                                        transition: all .35s ease-in;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and(min-width: 320px) and (max-width: 920px) {
+    
+    section.enroll-section{
+        width: 100%;
+        height: auto;
+
+        div.container{
+            width: 100%;
+            padding: 1rem 0;
+
+            div.enroll-card-container{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+    
+                div.enroll-course{
+                    width: 90%;
+                    height: auto;
+    
+                    &::after{
+                        width: 230px;
+                    }
+                    
+                    div.card-head-container{
+                        width: 100%;
+                        
+                        div.card-head-image{
+                            position: relative;
+                            width: 100%;
+                            img{
+                                width: 120%;
+                                border-radius: .5rem;
+                                position: absolute;
+                                left: -30%;
+                            }
+                        }
+    
+                    }
+    
+                    div.card-body-container{
+    
+                        ul.card-body-content{
+    
+                            h4.card-body-content-title{
+                                font-weight: 600;
+                                font-size: 15px;
+                            }
+                            
+                            li{
+    
+                                mat-icon.list-icon{
+                                    color: #71AC3E;
+                                    font-size: 12px;
+                                }
+    
+                                span{
+                                    font-size: 12px;
+                                    font-family: $font-family;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+                
+                
+                div.bar{
+                    transform: rotate(0deg);
+                }
+    
+                div.enroll-form{
+                    width: 90%;
+                    div.user-progress{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+    
+                        div.progress-link{
+                            
+                            &:not(:last-child){
+                                &::before{
+                                    width: 110px; 
+                                }
+                            }
+                        }
+                    }
+                    form{
+                        width: 90%;
+                        margin: 2rem auto;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and(min-width: 920px) and (max-width: 1024px) {
+    
+    section.enroll-section{
+        width: 100%;
+        height: auto;
+
+        div.container{
+            width: 100%;
+            padding: 1rem 0;
+
+            div.enroll-card-container{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+    
+                div.enroll-course{
+                    width: 90%;
+                    height: auto;
+    
+                    &::after{
+                        width: 410px;
+                        height: 400px;
+                    }
+                    
+                    div.card-head-container{
+                        width: 100%;
+                        padding-bottom: 4rem;
+                        
+                        div.card-head-image{
+                            position: relative;
+                            width: 100%;
+                            img{
+                                width: 120%;
+                                border-radius: .5rem;
+                                position: absolute;
+                                left: -30%;
+                            }
+                        }
+    
+                    }
+    
+                    div.card-body-container{
+    
+                        ul.card-body-content{
+                            padding-left: 1rem;
+                            width: 500px;
+    
+                            h4.card-body-content-title{
+                                font-weight: 600;
+                                font-size: 17px;
+                            }
+                            
+                            li{
+    
+                                mat-icon.list-icon{
+                                    color: #71AC3E;
+                                    font-size: 12px;
+                                }
+    
+                                span{
+                                    font-size: 15px;
+                                    font-family: $font-family;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+                
+                
+                div.bar{
+                    transform: rotate(0deg);
+                }
+    
+                div.enroll-form{
+                    width: 90%;
+                    div.user-progress{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+    
+                        // div.progress-link{
+                            
+                        //     // &:not(:last-child){
+                        //     //     &::before{
+                        //     //         width: 170px; 
+                        //     //     }
+                        //     // }
+                        //     // &:first-child{
+                        //     //     &::before{
+                        //     //         // width: 200px; 
+                        //     //     }
+                        //     // }
+                        // }
+                    }
+                    form{
+                        width: 90%;
+                        margin: 2rem auto;
+                    }
+                }
+            }
+        }
+    }
+}

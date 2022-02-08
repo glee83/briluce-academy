@@ -1,0 +1,193 @@
+
+@import '../../../assets/fonts/variable';
+
+mat-icon.cloud-down{
+    color: $card-icon-color;
+}
+mat-icon.watch{
+    color: #0497A1;
+}
+mat-icon.users{
+    color: #DBA900;
+}
+mat-icon.list{
+    color: #569C19
+}
+
+mat-icon.tools{
+    color: #0497A1
+}
+
+section.courses-section{
+    // width: 540px;
+    height: auto;
+    background: #ffffff;
+    position: relative;
+
+    div.container{
+        // width: 90%;
+        // margin: 0 auto;
+
+
+        div.course-hero{
+            text-align: center;
+            padding: 3rem 0;
+
+            h1.hero-title{
+                color: #9B9B9B;
+                font-family: $font-family;
+                position: relative;
+                margin-bottom: 2rem;
+                font-size: 25px;
+                font-weight: 500;
+
+                &::after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width:5%;
+                    height: 2px;
+                    background: #9B9B9B;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    margin-top: 1rem;
+                    text-align: center;
+                }
+            }
+
+            p.course-para{
+                font-weight: 300;
+                font-size: 15px;
+                color: #9B9B9B;
+                font-family: $font-family;
+            }
+        }
+
+        div.courses-container{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            div.courses{
+                &:not(:last-child){
+                    margin-right: 2rem;
+                }
+            }
+            
+            div.course-card{
+                // box-shadow: 0px 8px 8px rgba(0,0,0,0.2);
+                box-shadow:  20px 20px 60px #d0d0d0;
+             
+                background: #ffffff;
+                border-radius: 1rem;
+                height: 450px;
+                width: 330px;
+                margin-bottom: 1rem;
+
+                &:not(:last-child){
+                    margin-right: 1rem;
+                }
+
+                &:hover{
+                    cursor: pointer;
+                }
+
+
+                div.course-card-image{
+                    padding: 1.5rem 0;
+                    width: 100%;
+                    height: 45%;
+                    // background-color: red;
+                    
+                    img{
+                        width: 90%;
+                        height: 100%;
+                        margin: 0 auto;
+                        display: block;
+                        border-radius: 1rem;
+                    }
+                }
+
+                div.course-card-body{
+                    width: 100%;
+                    margin-bottom: 1rem;
+
+                    div.course-content{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-family: $font-family;
+                        padding: .5rem 1.5rem;
+                        background-color: $card-color;
+                        color: $light-dark;
+                        border-radius: .3rem;
+                        h5.course-title{
+                            font-size: 14px;
+                            font-weight: 700;
+                        }
+
+                        p.course-info{
+                            font-size: 13px;
+                            font-weight: 100;
+                        }
+                    }
+                }
+
+                &:hover div.course-card-body div.course-content{
+                    border-left: 6px solid $card-icon-color;
+                    border-right: 6px solid $card-icon-color;
+                    transition: all .35s ease-in;
+                }
+
+                div.course-card-footer{
+                    padding: 0 1rem;
+                    margin-bottom: 1rem;
+
+                    div.course-footer-content{
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        grid-template-rows: 1fr;
+
+                        div.footer-content{
+
+                            mat-icon{
+                                align-content: center;
+                                padding: 0 .6rem;
+                            }
+                            span{
+                                font-size: 12px;
+                                font-weight: 500;
+                                display: block;
+                                margin-bottom: .5rem;
+                                color: $light-dark;
+                            }
+                            span.duration{
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

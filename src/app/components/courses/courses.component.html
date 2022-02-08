@@ -1,0 +1,60 @@
+<section class="courses-section">
+    <div class="container">
+
+        <div class="course-hero text-center">
+            <h1 class="course hero-title">Select a course below </h1>
+            <p class="course course-para">Find your favorite course  below and get started.</p>
+        </div>
+        <div class="courses-container" >
+            
+            <div class="courses" *ngFor="let course of courses">
+                <div class="course-card" (click)="selectCourse(course)">
+                
+                    <div class="course-card-image">
+                        <img src=" {{ course.imageUrl}} " alt="Full-stack pic">
+                    </div>
+                
+                    <div class="course-card-body">
+                        <div class="course-content">
+                            <div class="course-details">
+                                <h5 class="course-title">{{course.title}} </h5>
+                                <p class="course-info">{{course.subTitle}} </p>
+                            </div>
+                
+                            <span class="course-icon">
+                                <mat-icon class="cloud-down">cloud_download</mat-icon>
+                            </span>
+                        </div>
+                    </div>
+                
+                    <div class="course-card-footer">
+                        <div class="course-footer-content">
+                            <div class="footer-content">
+                                <mat-icon class="watch">watch_later</mat-icon>
+                                <span class="duration">Duration</span>
+                                <span class="duration">120 Days</span>
+                            </div>
+                            <div class="footer-content">
+                                <mat-icon class="users">group</mat-icon>
+                                <span class="duration">Enrolled</span>
+                                <span class="duration">27</span>
+                            </div>
+                            <div class="footer-content">
+                                <mat-icon class="list"> list_alt</mat-icon>
+                                <span class="duration">Internship</span>
+                                <span class="duration">60 Days</span>
+                            </div>
+                            <div class="footer-content">
+                                <mat-icon class="tools"> local_dining</mat-icon>
+                                <span class="duration">Difficulty</span>
+                                <span class="dash">- - -</span>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>

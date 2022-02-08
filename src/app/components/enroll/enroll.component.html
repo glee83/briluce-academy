@@ -1,0 +1,272 @@
+<section class="enroll-section">
+    <div class="container">
+
+        <div class="enroll-hero">
+            <h1 class="hero-title">Enroll Now</h1>
+            <p class="enroll-para">You have selected the course <b class="course-title">Fullstack Web Developer</b></p>
+        </div>
+
+        <div class="enroll-card-container">
+            
+            <div class="enroll-course">
+
+                <div class="card-head-container">
+                    <div class="card-head-image">
+                        <img src="../../../assets/images/card-img.jpg" alt="">
+                    </div>
+                    
+                    <div class="card-wrapper">
+                        <h2 class="course-title">Fullstack Web Development</h2>
+                        
+                        <div class="card-head">
+                    
+                            <div class="footer-content" style="background-color:#D0EBED;">
+                                <mat-icon class="watch">watch_later</mat-icon>
+                                <span class="duration">Duration</span>
+                                <span class="duration">120 Days</span>
+                            </div>
+                            <div class="footer-content">
+                                <mat-icon class="users">group</mat-icon>
+                                <span class="duration">Enrolled</span>
+                                <span class="duration">27</span>
+                            </div>
+                            <div class="footer-content">
+                                <mat-icon class="list"> list_alt</mat-icon>
+                                <span class="duration">Internship</span>
+                                <span class="duration">60 Days</span>
+                            </div>
+                            <div class="footer-content">
+                                <mat-icon class="tools"> local_dining</mat-icon>
+                                <span class="duration">Difficulty</span>
+                                <span class="dash">- - -</span>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body-container">
+                    <ul class="card-body-content">
+                        <h4 class="card-body-content-title">Requiremens </h4>
+                        <li>
+                            <mat-icon class="list-icon">brightness_high</mat-icon>
+                            <span>Basic knowledge of HTML/CSS/JAVASCRIPT</span>
+                        </li>
+                        <li>
+                            <mat-icon class="list-icon">brightness_high</mat-icon>
+                            <span>English language speaking</span>
+                        </li>
+                        <li>
+                            <mat-icon class="list-icon">brightness_high</mat-icon>
+                            <span>Basic knowledge of PHP</span>
+                        </li>
+                    </ul>
+                    <ul class="card-body-content">
+                        <h4 class="card-body-content-title">Duration of course</h4>
+                        <li>
+                            <mat-icon class="list-icon">brightness_high</mat-icon>
+                            <span>4 months training</span>
+                        </li>
+                        <li>
+                            <mat-icon class="list-icon">brightness_high</mat-icon>
+                            <span>2 months internship</span>
+                        </li>
+                    </ul>
+                    <ul class="card-body-content">
+                        <h4 class="card-body-content-title">Prices</h4>
+                        <li>
+                            <mat-icon class="list-icon">brightness_high</mat-icon>
+                            <span>Employment possibilities</span>
+                        </li>
+                        <li>
+                            <mat-icon class="list-icon">brightness_high</mat-icon>
+                            <span>Certificate of completion</span>
+                        </li>
+                    </ul>
+                    <ul class="card-body-content">
+                        <h4 class="card-body-content-title">Country of training</h4>
+                        <li>
+                            <mat-icon class="list-icon">brightness_high</mat-icon>
+                            <span>Bangladesh</span>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <div class="card-footer-content">
+                    <div class="footer-title">
+                        <span class="number-of-enrol">45</span>
+                        <span class="enrol">Enrolments</span>
+                    </div>
+
+                    <div class="footer-body">
+                        <span>Registration Fees</span>
+                        <b>5000XAF</b>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="bar">
+                <span class="bar tool"></span>
+            </div>
+
+            <div class="enroll-form">
+
+                <div class="user-progress">
+                    <div class="progress-link" (click)="toggleForm('registration')" [class.changeBg]="class1" >
+                        <a >User Identification</a>
+                        <span>1</span>
+                    </div>
+                    <div class="progress-link" (click)="toggleForm('language')" [class.changeBg]="class2">
+                        <a >Lingual Skills</a>
+                        <span>2</span>
+                    </div>
+                    <div class="progress-link" (click)="toggleForm('documents')" [class.changeBg]="class3">
+                        <a href="#">Documents</a>
+                        <span>3</span>
+                    </div>
+                    <div class="progress-link" (click)="toggleForm('payments')" [class.changeBg]="class4">
+                        <a href="#">Finished</a>
+                        <span>4</span>
+                    </div>
+                </div>
+
+                <form class="users-form" *ngIf="registration">
+                    <fieldset>
+                        <input type="text" name="courseName" id="courseName" placeholder="Selected Course">
+                        <input type="text" name="educaBack" id="educaBack" placeholder="Education Background">
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" name="country" id="country" placeholder="Cameroon Only">
+                        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone">
+                    </fieldset>
+                    <fieldset>
+                        <input type="email" name="email" id="email" placeholder="Email address">
+                        <input type="number" name="passNumber" id="passNumber" placeholder="Passport Number">
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" name="institute" id="institute" placeholder="Last Institute">
+                        <input type="text" name="degree" id="degree" placeholder="Recent Degree">
+                    </fieldset>
+                    <fieldset>
+                        <input type="number" name="score" id="score" placeholder="Degree Score">
+                        <input type="file" name="fileName" id="fileName" placeholder="Upload CV">
+                    </fieldset>
+
+                    <button mat-button>
+                        Next Page 
+                        <mat-icon>trending_flat</mat-icon>
+                    </button>
+                </form>
+
+                <form class="users-lang" *ngIf="language">
+                    <h5 class="users-title">select</h5>
+                    <fieldset class="user-infos">
+                        <label>English Level: <b>Writing</b></label>
+                        <span class="stars-container">
+                            <mat-icon>star_border</mat-icon>
+                            <mat-icon>star_border</mat-icon>
+                            <mat-icon>star_border</mat-icon>
+                            <mat-icon>star_border</mat-icon>
+                            <mat-icon>star_border</mat-icon>
+                        </span>
+                        <span class="number">0</span>
+                    </fieldset>
+                    <fieldset class="user-infos">
+                        <label>English Level: <b>Speaking</b></label>
+                        <span class="stars-container">
+                            <mat-icon>star_border</mat-icon>
+                            <mat-icon>star_border</mat-icon>
+                            <mat-icon>star_border</mat-icon>
+                            <mat-icon>star_border</mat-icon>
+                            <mat-icon>star_border</mat-icon>
+                        </span>
+                        <span class="number">0</span>
+                    </fieldset>
+                    <fieldset class="user-infos">
+                        <label>English Level: <b>Reading</b></label>
+                        <span class="stars-container">
+                            <mat-icon>star_border</mat-icon>
+                            <mat-icon>star_border</mat-icon>
+                            <mat-icon>star_border</mat-icon>
+                            <mat-icon>star_border</mat-icon>
+                            <mat-icon>star_border</mat-icon>
+                        </span>
+                        <span class="number">0</span>
+                    </fieldset>
+                    <fieldset class="user-infos">
+                        <label>English Level: <b>Comprehension</b></label>
+                        <span class="stars-container">
+                            <mat-icon>star_border</mat-icon>
+                            <mat-icon>star_border</mat-icon>
+                            <mat-icon>star_border</mat-icon>
+                            <mat-icon>star_border</mat-icon>
+                            <mat-icon>star_border</mat-icon>
+                        </span>
+                        <span class="number">0</span>
+                    </fieldset>
+                    <fieldset class="user-infos">
+                        <textarea name="message" id="message" cols="60" rows="5" placeholder="Why are appli"></textarea>
+                    </fieldset>
+
+                    <button mat-button>
+                        Next Page 
+                        <mat-icon>trending_flat</mat-icon>
+                    </button>
+                </form>
+
+                <form class="users-documents" *ngIf="documents" >
+                    <h5 class="users-title">documents</h5>
+                    
+                    <div class="documents-container ">
+                        <fieldset class="user-docu">
+                            <mat-icon>cloud_upload</mat-icon>
+                            <input type="file" name="docum" id="file">
+                            <span>Upload certified NID</span>
+                        </fieldset>
+    
+                        <fieldset class="user-docu">
+                            <mat-icon>cloud_upload</mat-icon>
+                            <input type="file"  name="docum" id="file">
+                            <span>Upload photo 4x4</span>
+                        </fieldset>
+    
+                        <fieldset class="user-docu">
+                            <mat-icon>cloud_upload</mat-icon>
+                            <input type="file" name="docum" id="file">
+                            <span>Upload Deploma copy</span>
+                        </fieldset>
+                    </div>
+                    
+                    <button mat-button>
+                        Next Page 
+                        <mat-icon>trending_flat</mat-icon>
+                    </button>
+                </form>
+
+                <form class="users-payment" *ngIf="payments" >
+                    <h5 class="users-title">Select payment method</h5>
+                    
+                    <div class="payment-container">
+                        <div class="payment-methods">
+                            <h2 class="title">Please select a payment method</h2>
+
+                            <span class="bar"></span>
+
+                            <div class="payment-container d-flex justify-content-between align-item-center">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button mat-button>
+                        Finish payment 
+                        <mat-icon>trending_flat</mat-icon>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

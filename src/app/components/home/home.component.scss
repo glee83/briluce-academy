@@ -1,0 +1,119 @@
+@import '../../../assets/fonts/variable';
+
+a.togglebar{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+
+    mat-icon{
+        vertical-align: middle;
+        font-size: 35px;
+        margin-top: -.8rem;
+    }
+
+    &:active ul.navbar{
+        top: 150%;
+    }
+}
+
+header.home{
+    width: 100%;
+    // width: 540px;
+    height: 70vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.6)), url('./../../../assets/images/home.jpg');
+    background-position: center;
+    background-size: cover;
+
+    nav.navbar{
+        background-color: $primary-color !important;
+        
+        div.container{
+
+            a.navbar-brand,
+            div.contact a.phone{
+                color: #fff;
+                font-family: $font-family;
+                font-size: 16px;
+                font-weight: 500;
+                word-spacing: normal;
+            }
+
+            div.contact{
+                text-align: center;
+                mat-icon{
+                    font-size: 35px;
+                    vertical-align: middle;
+                    margin-right: 1rem;
+                    color: #DBA900;
+                    margin-top: -.8rem;
+                }
+            }
+            
+            div.collapse{
+                
+                ul.navbar-nav{
+                    margin: 0;
+                    padding: 0;
+                    li.nav-item{
+    
+                        mat-icon{
+                            background: #fff;
+                            display: inline-block !important;
+                            color: $secondary-color;
+                        }
+    
+                        span.dot{
+                            color: $secondary-color;
+                        }
+    
+                        a.nav-link{
+                            text-decoration: none;
+                            cursor: pointer;
+                            color: #fff;
+                            font-size: 16px;
+                            font-weight: 300;
+                        }
+    
+                        a.active{
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    div.hero-container
+    {
+        width: 80%;
+        margin: 10% auto;
+        color: #fff;
+        font-family: $font-family;
+        text-align: center;
+
+        h3.hero-sub-title{
+            font-family: $primary-font;
+            margin-bottom: .5rem;
+            font-size: 150%;
+            font-weight: 400;
+        }
+
+        h1.hero-title{
+            font-size: 25px;
+            font-weight: 800;
+            line-height: 1.25;
+            letter-spacing: .5px;
+            margin-bottom: .5rem;
+            word-spacing: 2px;
+            padding-bottom: .5rem;
+        }
+
+        p.hero-content{
+            padding: 0 1rem;
+            font-size: 15px;
+            font-weight: 100;
+        }
+
+    }
+
+}

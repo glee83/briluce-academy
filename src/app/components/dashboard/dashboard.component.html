@@ -1,0 +1,119 @@
+<mat-sidenav-container class="example-container">
+    <mat-sidenav opened mode="side" #sidenav="matSidenav">
+        <div class="sidenav-heading">
+            <h3 class="heading">Briluce academy </h3>
+        </div>
+        <div class="user-detail ">
+            <span class="active"></span>
+            <img src="../../../assets/images/home.jpg"  alt="admin img" class="rounded">
+            <span class="pro">Super Admin</span>
+            <span class="divider"></span>
+            <h4 class="name">Glee Albert</h4>
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <div class="dashboard-features">
+            <div class="feature">
+                <mat-icon>view_module</mat-icon>
+                <button mat-button routerLink="/dashboard/home">
+                    <span>Dashboard</span>
+                </button>
+            </div>
+
+            <div class="feature">
+                <mat-icon>directions_transit</mat-icon>
+                <button mat-button routerLink='/dashboard/users'>
+                    <span>Enrolments List</span>
+                </button>
+            </div>
+            
+            <div class="feature">
+                <button mat-button routerLink='/dashboard/users'>
+                    <mat-icon>people</mat-icon>
+                    <span>Payments Reports</span>
+                </button>
+            </div>
+
+            <div class="feature">
+                <button mat-button routerLink='/dashboard/users'>
+                    <mat-icon>assignment</mat-icon>
+                    <span>Courses</span>
+                </button>
+            </div>
+    
+            <div class="feature">
+                <button mat-button routerLink='/dashboard/ticket'>
+                    <mat-icon>library_books</mat-icon>
+                    <span>Exam Results</span>
+                </button>
+            </div>
+    
+        </div>
+
+        
+        <div class="dashboard-others">
+            <div class="other">
+                <span class="others">OTHERS</span>
+                <span class="hr"></span>
+            </div>
+
+            <mat-accordion>
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <mat-icon>local_atm</mat-icon>
+                            <span>CMS Settings</span>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <button mat-button>Account</button>
+                    <button mat-button>Administrative</button>
+                    <button mat-button>Notification</button>
+                </mat-expansion-panel>
+            </mat-accordion>
+            <mat-accordion>
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <mat-icon>language</mat-icon>
+                            <span>Languages</span>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <button mat-button>English</button>
+                    <button mat-button>French</button>
+                </mat-expansion-panel>
+            </mat-accordion>
+            <mat-accordion>
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <mat-icon>settings</mat-icon>
+                            <span>System Settings</span>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <button mat-button>add account</button>
+                    <button mat-button>delete</button>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+
+        <button mat-button class="logout">
+            <mat-icon>power_settings_new</mat-icon>
+            <span>Logout</span>
+        </button>
+
+    </mat-sidenav>
+    <mat-sidenav-content>
+
+        <button mat-icon-button *ngIf="sidenav.mode ==='over'" (click)="sidenav.toggle()">
+            <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+            <mat-icon *ngIf="sidenav.opened">close</mat-icon>
+        </button>
+
+        <!--
+      routes
+    -->
+        <router-outlet></router-outlet>
+
+    </mat-sidenav-content>
+</mat-sidenav-container>
